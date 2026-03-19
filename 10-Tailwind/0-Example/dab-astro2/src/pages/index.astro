@@ -1,0 +1,24 @@
+---
+import TopBar from "../components/TopBar.svelte";
+import Hero from "../components/Hero.svelte";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello world!</title>
+  </head>
+  <body>
+    <Hero />
+    <TopBar />
+    <div class="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div class="bg-red-300">left side 1</div>
+      <div class="bg-green-200">main 2 </div>
+      <div class="bg-red-300">right side 3</div>
+      <div class="bg-red-300">left side 4</div>
+      <div class="bg-green-200">main 5</div>
+      <div class="bg-red-300">right side 6</div>
+    </div>
+  </body>
+</html>

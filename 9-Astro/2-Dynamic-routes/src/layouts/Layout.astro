@@ -1,0 +1,15 @@
+---
+const id = Astro.params.id || 0;
+---
+
+<html>
+	<head>
+		<title>
+            { id }
+        </title>
+	</head>
+    <body>
+        <a href=`/${ +id +1 }`>{+id > 0 ? "Next" : "Start"}</a>
+        <slot />
+    </body>
+</html>

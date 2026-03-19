@@ -1,0 +1,22 @@
+---
+import Header from "./Header.svelte";
+import Assignment from "../components/Assignment.svelte"
+const n = Astro.params.n || 1;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Programming assignments</title>
+  </head>
+  <body>
+    <Header client:only={"svelte"} />
+    <div class="container mx-auto h-full">
+      <Assignment client:load/>
+    </div>
+  </body>
+</html>
+ 

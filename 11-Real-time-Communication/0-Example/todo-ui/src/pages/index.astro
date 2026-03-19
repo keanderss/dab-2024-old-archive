@@ -1,0 +1,21 @@
+---
+import Todos from "../components/Todos.svelte";
+import SSE from "../components/SSE.svelte";
+import WS from "../components/WS.svelte";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Todos</title>
+  </head>
+  <body>
+    <!-- <Todos client:load /> -->
+    <Todos client:load />
+    <WS client:load />
+    <SSE client:load />
+  </body>
+</html>
